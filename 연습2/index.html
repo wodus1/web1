@@ -10,29 +10,35 @@
   <h1><a href="index.html">WEB</a></h1>
   <input id="night_day" type="button" value="night" onclick="nightDayHandler(this);">
   <ol>
-    <li><a  onclick="
-      fetch('html').then(function(responese){
+    <li><a onclick="
+        fetch('html').then(function(responese){
         response.text().then(function(text){
           document.querySelector('article').innerHTML=text;
         })
       });
       "></a>HTML</li>
-    <li><a  onclick="
-      fetch('html').then(function(responese){
+    <li><a onclick="
+      fetch('css').then(function(responese){
         response.text().then(function(text){
           document.querySelector('article').innerHTML=text;
         })
       });
       "></a>CSS</li>
-    <li><a  onclick="
-      fetch('html').then(function(responese){
+    <li><a onclick="
+      fetch('javaScript').then(function(responese){
         response.text().then(function(text){
           document.querySelector('article').innerHTML=text;
         })
       });
       "></a>javaScript</li>
   </ol>
-  <h2>WEB</h2>
   <article></article>
+  <input type="button" onclick="
+     fetch('css').then(function(responese){
+        response.text().then(function(text){
+          document.querySelector('article').innerHTML=text;
+        })
+      });
+  ">
 </body>
 </html>
